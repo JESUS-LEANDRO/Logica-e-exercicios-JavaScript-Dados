@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de programação com javascript</title>
+</head>
+<body>
+    <h1>Grande quantidade de dados array de objetos</h1>
+
+    <div id="output">
+
+    </div>
+
+    <script>
+        // ele é o conjunto de dados dentro de um array
+       var produtos = [
+            {"nome": "caneta", "preco":2},
+            {"nome": "lapis", "preco": 1.2},
+            {"nome": "borracha", "preco": 0.5}
+       ];
+       var msg = "";
+
+       for(var i = 0; i < produtos.length; i++){
+        console.log(produtos[i].preco);
+
+        msg += "<h2>Produto: " + produtos[i].nome +"</h2>"
+        msg += "<p>Preço: R$ " + produtos[i].preco +"</p>"
+       }
+
+       document.querySelector("#output").innerHTML = msg;
+    </script>
+
+</body>
+</html>

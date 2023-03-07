@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de programação com javascript</title>
+</head>
+<body>
+    <h1>Exercicio 4</h1>
+
+    <div id="output">
+
+    </div>
+
+    <script>
+        // ele é o conjunto de dados dentro de um array
+        var user1 = new Object(); 
+        user1.nome = "levi";
+        user1.email = "levi@servi.com";
+        
+        var user2 = new Object(); 
+        user2.nome = "joao";
+        user2.email = "joao@servi.com";
+
+        var user3 = new Object(); 
+        user3.nome = "leo";
+        user3.email = "leo@servi.com";
+        
+       var users = new Array(user1, user2,user3);
+       console.log(users);
+       var msg = "";
+       var x = 0;
+       while(users[x]){
+            console.log(users[x].nome);
+            msg += users[x].nome + " - " + users[x].email +"<br>";
+            x++;
+       }
+
+       
+
+       document.querySelector("#output").innerHTML = msg;
+    </script>
+</body>
+</html>
